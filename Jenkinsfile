@@ -34,7 +34,7 @@ pipeline {
 					docker rm ${CONTAINER}
 				fi
 				echo "Running a new container"
-				docker run -d -p 80:80 ${REPO_NAME}/webserver-domain:${BUILD_NUMBER}
+				docker run -d -p 80:80 webserver-domain:${BUILD_NUMBER}
 				echo "Check the URL: http://`hostname`:80"
 			'''
          }
