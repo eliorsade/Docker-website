@@ -7,12 +7,7 @@ pipeline {
           checkout scm
         } 
       }
-	  stage('Checking environment') {
-         steps {
-            sh 'printenv'
-         }
-      }
-	    
+	   
       stage('Build a docker image') {
          steps {
             echo 'Build process..'            
