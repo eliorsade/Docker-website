@@ -28,7 +28,7 @@ pipeline {
       stage('Docker push'){
           steps{
           sh '''
-          docker tag app-randon-pics:${BUILD_NUMBER} eliorsade/webapp-randon-pics:latest
+          docker tag webapp-randon-pics:${BUILD_NUMBER} eliorsade/webapp-randon-pics:latest
           docker push eliorsade/webapp-randon-pics:latest
           '''
       }
