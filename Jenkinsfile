@@ -46,7 +46,7 @@ pipeline {
 					docker rm ${CONTAINER}
 				fi
 				echo "Running a new container"
-				docker run -p 8888:5000 --name webapp-random-pics:${BUILD_NUMBER} eliorsade/webapp-randon-pics
+				docker run -p 8888:5000 eliorsade/webapp-randon-pics
 				echo "Check the URL: http://`hostname`:5000"
 			'''
          }
