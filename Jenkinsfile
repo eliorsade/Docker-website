@@ -21,7 +21,7 @@ pipeline {
          steps {
             echo 'Build process..'            
             sh '''
-                docker build -t webapp-randon-pics:${BUILD_NUMBER}" .
+                docker build -t "webapp-randon-pics:${BUILD_NUMBER}" .
             '''
          }
       }
