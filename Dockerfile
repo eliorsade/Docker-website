@@ -8,4 +8,4 @@ COPY templates/index.html /usr/src/app/templates/
 
 EXPOSE 5000
 
-CMD ["python", "/usr/src/app/app.py"]
+CMD ["python", "/usr/src/app/application.py"]
