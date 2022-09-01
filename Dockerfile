@@ -5,6 +5,7 @@ COPY html/ /var/www/webosmaster.ga/
 CMD mkdir -p /etc/apache2/ssl/webosmaster.ga/
 COPY ssl-webosmaster/ /etc/apache2/ssl/webosmaster.ga/
 COPY webosmaster.ga-ssl.conf /etc/apache2/sites-available/
+COPY webosmaster.ga.conf /etc/apache2/sites-available/
 RUN a2enmod ssl 
 RUN a2dissite 000-default.conf
 RUN a2ensite webosmaster.ga.conf
