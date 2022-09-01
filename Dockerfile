@@ -1,5 +1,6 @@
 FROM eliorsade/webserver-domain:latest
 
+EXPOSE 443
 COPY html/ /var/www/webosmaster.ga/
 CMD mkdir -p /etc/apache2/ssl/webosmaster.ga/
 COPY ssl-webosmaster/ /etc/apache2/ssl/webosmaster.ga/
