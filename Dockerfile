@@ -7,4 +7,4 @@ COPY webosmaster.ga-ssl.conf /etc/apache2/sites-available/
 CMD a2ensite webosmaster.ga-ssl.conf
 RUN chmod -R 755 /var/www/webosmaster.ga/
 RUN service apache2 restart
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD ["apache2ctl", "-D","FOREGROUND"]
