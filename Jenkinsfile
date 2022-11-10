@@ -30,7 +30,7 @@ pipeline {
 				fi
 				echo "Running a new container"
 				docker run -d -p 443:443 webserver-domain:${BUILD_NUMBER}
-				echo "Check the URL: http://`hostname`:80"
+				echo "Check the URL: https://`hostname`:443"
 			'''
          }
       }
